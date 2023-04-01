@@ -21,6 +21,7 @@ J-4) 자신의 매니저보다 먼저 고용된 사원들의 LAST_NAME 및 고�
 둘 이상의 테이블에 존재하는 공통 속성의 값이 같은 것을 결과로 추출하는것을 말한다.
 
 # 설명
+J-2) 급여가 2500이하이고 사원번호가 200이하인 서울의 LAST_NAME, 부서명을 조회하시오.
 - LAST_NAME(이름), DEPARTMENT_NAME(부서명)을 조회한다.
 - 테이블을 구분하기 위해 EMPLOYEES E(사원), DEPARTMENTS D(부서) 별칭을 해준다.
 - 첫번째 조건은 사원테이블의 DEPARTMENT_ID(부서 아이디) 부서테이블의 DEPARTMENT_ID(부서 아이디)를 등가 조인을 해준다.
@@ -38,6 +39,7 @@ J-4) 자신의 매니저보다 먼저 고용된 사원들의 LAST_NAME 및 고�
 두 테이블을 조인할 때, 1개의 테이블에만 데이터가 있어도 결과가 나오는것을 말한다.
 
 # 설명
+J-3) 사원정보(EMPLOYEE_ID, LAST_NAME, MANAGER_ID)와 사원의 직속 상관정보(EMPLOYEE_ID, LAST_NAME) 조회하시오.
 
 # Java Cord
 ![image](https://user-images.githubusercontent.com/122009563/228765011-27667dc1-ea3c-4653-90ae-a1cad6f41bec.png)
