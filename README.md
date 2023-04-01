@@ -6,6 +6,7 @@
 
 # 설명
 J-4) 자신의 매니저보다 먼저 고용된 사원들의 LAST_NAME 및 고용일을 조회하시오.
+
 - LAST_NAME(이름), HIRE_DATE(고용일)을 조회한다.
 - 테이블을 구분하기 위해 EMPLOYEES E(사원), EMPLOYEES M(매니저) 별칭을 해준다.
 - 첫번째 조건은 사원 테이블의 매니저아이디랑 매니저 테이블의 사원 아이디를 등가 조인을 해준다.
@@ -22,6 +23,7 @@ J-4) 자신의 매니저보다 먼저 고용된 사원들의 LAST_NAME 및 고�
 
 # 설명
 J-2) 급여가 2500이하이고 사원번호가 200이하인 서울의 LAST_NAME, 부서명을 조회하시오.
+
 - LAST_NAME(이름), DEPARTMENT_NAME(부서명)을 조회한다.
 - 테이블을 구분하기 위해 EMPLOYEES E(사원), DEPARTMENTS D(부서) 별칭을 해준다.
 - 첫번째 조건은 사원테이블의 DEPARTMENT_ID(부서 아이디) 부서테이블의 DEPARTMENT_ID(부서 아이디)를 등가 조인을 해준다.
@@ -40,7 +42,9 @@ J-2) 급여가 2500이하이고 사원번호가 200이하인 서울의 LAST_NAME
 
 # 설명
 J-3) 사원정보(EMPLOYEE_ID, LAST_NAME, MANAGER_ID)와 사원의 직속 상관정보(EMPLOYEE_ID, LAST_NAME) 조회하시오.
-
+- EMPLOYEE_ID(사원번호), LAST_NAME(사원이름), MANAGER_ID(사원의 매니저번호), EMPLOYEE_ID(매니저의 사원번호), LAST_NAME(매니저 이름)을 조회한다.
+- 테이블을 구분하기 위해 EMPLOYEES E(사원), DEPARTMENTS D(부서) 별칭을 해준다.
+- 조인문의 왼쪽에 있는 테이블의 모든 결과를 가져온 후 오른쪽의 테이블의 데이터를 매칭하고, 매칭되는 데이터가 없는 경우 NULL을 표시한다.
 # Java Cord
 ![image](https://user-images.githubusercontent.com/122009563/228765011-27667dc1-ea3c-4653-90ae-a1cad6f41bec.png)
 
